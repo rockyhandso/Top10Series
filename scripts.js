@@ -9,7 +9,7 @@ carousels_netflix.forEach(carousel => {
     const size = carouselImages_netflix[0].clientWidth;
 
     nextBtn_netflix.addEventListener('click', () => {
-        if (counter >= carouselImages_netflix.length) return;
+        if (counter >= carouselImages_netflix.length-1) return;
         carouselSlide_netflix.style.transition = "transform 0.4s ease-in-out";
         counter++;
         carouselSlide_netflix.style.transform = 'translateX(' + (-size * counter) + 'px)';
