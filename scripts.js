@@ -88,3 +88,4 @@ anotherContain.forEach(anotherContainLR => {
     });
 });
 //trying to hide the carousel containe 
+document.getElementById("h3contain").style.color="red";
