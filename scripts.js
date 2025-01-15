@@ -34,7 +34,7 @@ carousels_amazon.forEach(carousel => {
     const size = carouselImages_amazon[0].clientWidth;
 
     nextBtn_amazon.addEventListener('click', () => {
-        if (counter >= carouselImages_amazon.length) return;
+        if (counter >= carouselImages_amazon.length-1) return;
         carouselSlide_amazon.style.transition = "transform 0.4s ease-in-out";
         counter++;
         carouselSlide_amazon.style.transform = 'translateX(' + (-size * counter) + 'px)';
